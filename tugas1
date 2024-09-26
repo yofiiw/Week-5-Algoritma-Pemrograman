@@ -1,0 +1,11 @@
+year = int(input("Masukkan Tahun : " ))
+if year % 4 == 0:
+  if year % 100 == 0:
+    if year % 400 == 0:
+      print("Tahun " + str(year) + " Merupakan Tahun Kabisat")
+    else:
+      print("Tahun " + str(year) + " Bukanlah Tahun Kabisat")
+  else:
+    print("Tahun " + str(year) + " Merupakan Tahun Kabisat")
+else:
+  print("Tahun " + str(year) + " Bukanlah Tahun Kabisat")
