@@ -1,0 +1,21 @@
+konsumen = input("Apakah Konsumen Member (ya/tidak) : ")
+belanja = float(input("Total Belanja : "))
+
+if konsumen == 'ya':
+  if belanja > 200000:
+    diskon = 0.02 + 0.04
+  elif belanja > 100000:
+    diskon = 0.02 + 0.03
+  else:
+    diskon = 0.02
+
+if konsumen == 'tidak':
+  if belanja > 200000:
+    diskon = 0 + 0.04
+  elif belanja > 100000:
+    diskon = 0 + 0.03
+  else:
+    diskon = 0
+
+total = belanja * (1 - diskon)
+print("Total Belanja yang Harus Dibayar =" , total)
