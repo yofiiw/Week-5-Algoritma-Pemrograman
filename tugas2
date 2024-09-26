@@ -1,0 +1,19 @@
+angka1 = float(input("Masukkan angka pertama: "))
+angka2 = float(input("Masukkan angka kedua: "))
+angka3 = float(input("Masukkan angka ketiga: "))
+
+if angka1 >= angka2 and angka1 >= angka3:
+  besar = angka1
+  ke = "Pertama"
+else:
+  if angka2 >= angka3:
+    besar = angka2
+    ke = "Kedua"
+  else:
+    besar = angka3
+    ke = "Ketiga"
+
+print("Angka Pertama = ", angka1)
+print("Angka Kedua = ", angka2)
+print("Angka Ketiga = ", angka3)
+print("Angka yang Terbesar Adalah "+ str(besar) + " Pada Angka", ke)
