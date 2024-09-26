@@ -1,0 +1,14 @@
+username = input("Masukkan Username = ")
+email = input("Masukkan Email = ")
+password = input("Masukkan Password = ")
+
+if username != "":
+  if '@' in email:
+    if len(password) >= 8:
+      print("User Berhasil Dibuat")
+    else:
+      print("Password harus lebih dari 8 karakter")
+  else:
+    print("Email harus mengandung '@'")
+else:
+  print("Username tidak boleh kosong")
